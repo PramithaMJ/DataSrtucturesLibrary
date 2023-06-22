@@ -15,6 +15,8 @@ int main()
 
     myDictionary["banana"] = "cesel"; // replace
 
+    cout << myDictionary.size() << endl;
+
     for (auto pair : myDictionary)
     {
         cout << pair.first << " - " << pair.second << endl;
