@@ -1,18 +1,30 @@
-#include<iostream>
-#include<map>
-#include<string>
-#include<list>
+#include <iostream>
+#include <map>
+#include <string>
+#include <list>
 
 using namespace std;
 
-int main(){
+int main()
+{
     map<string, list<string>> pokedex;
 
-    list<string> pikachuAttacks{"thunder shock", "tail whip","quick attact"};
+    list<string> pikachuAttacks{"thunder shock", "tail whip", "quick attact"};
     list<string> charmanderAttacks{"flame throer", "scary face"};
     list<string> chickeritauAttacks{"razor leaf", "poison powder"};
 
-    pokedex.insert(pair<string, list<string>>("Pikachu",pikachuAttacks));
-    pokedex.insert(pair<string, list<string>>("Charmander",charmanderAttacks));
-    pokedex.insert(pair<string, list<string>>("Chickeritau",chickeritauAttacks));
+    pokedex.insert(pair<string, list<string>>("Pikachu", pikachuAttacks));
+    pokedex.insert(pair<string, list<string>>("Charmander", charmanderAttacks));
+    pokedex.insert(pair<string, list<string>>("Chickeritau", chickeritauAttacks));
+
+    for (auto pair : pokedex)
+    {
+        cout << pair.first << " - ";
+
+        for (auto attack : pair.second)
+        {
+            cout << attack << ", ";
+        }
+        cout << endl;
+    }
 }
