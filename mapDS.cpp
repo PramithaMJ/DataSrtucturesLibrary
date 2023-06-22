@@ -10,7 +10,7 @@ int main(){
 
     myDictionary.insert(pair<string, string>("apple","Apple"));
     myDictionary.insert(pair<string, string>("banana","kesel"));
-    myDictionary.insert(pair<string, string>("orange","thsbili, dodam"));
+    myDictionary.insert(pair<string, string>("orange","thabili, dodam"));
 
     for(auto pair: myDictionary){
         cout<<pair.first<<" - "<<pair.second<<endl;
