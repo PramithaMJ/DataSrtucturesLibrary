@@ -10,5 +10,9 @@ int main(){
 
     list<string> pikachuAttacks{"thunder shock", "tail whip","quick attact"};
     list<string> charmanderAttacks{"flame throer", "scary face"};
-    list<string>chickeritauAttacks{"razor leaf", "poison powder"};
+    list<string> chickeritauAttacks{"razor leaf", "poison powder"};
+
+    pokedex.insert(pair<string, list<string>>("Pikachu",pikachuAttacks));
+    pokedex.insert(pair<string, list<string>>("Charmander",charmanderAttacks));
+    pokedex.insert(pair<string, list<string>>("Chickeritau",chickeritauAttacks));
 }
