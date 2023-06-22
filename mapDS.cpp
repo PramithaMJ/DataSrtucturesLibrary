@@ -14,7 +14,7 @@ int main()
     myDictionary.insert(pair<string, string>("orange", "thabili, dodam"));
 
     myDictionary["banana"] = "cesel"; // replace
-
+    //myDictionary.clear();//clear the map
     cout << myDictionary.size() << endl;
 
     for (auto pair : myDictionary)
