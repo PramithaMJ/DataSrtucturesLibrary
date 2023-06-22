@@ -6,7 +6,7 @@ using namespace std;
 
 int main(){
     // map automatically assending order
-    map<string, string> myDictionary;
+    unordered_map<string, string> myDictionary;
 
     myDictionary.insert(pair<string, string>("apple","Apple"));
     myDictionary.insert(pair<string, string>("banana","kesel"));
